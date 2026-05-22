@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>巴塔哥尼亚 · 世界尽头 — 09/26–10/07 阿根廷南境纪行</title>
+<meta name="description" content="2026 年 9 月 26 日至 10 月 7 日，夫妻二人深入阿根廷巴塔哥尼亚与乌斯怀亚——布宜诺斯艾利斯、火地岛、莫雷诺冰川、菲茨罗伊峰。逐日行程、气候光照、招牌体验、行前必读与装备清单。">
+<meta name="theme-color" content="#080b10">
+<meta property="og:title" content="巴塔哥尼亚 · 世界尽头 · Fin del Mundo">
+<meta property="og:description" content="09/26–10/07 · 阿根廷南境 · 夫妻二人的南半球初春纪行">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080b10'/%3E%3Cpath d='M4 23 L11 11 L15 18 L20 8 L28 23 Z' fill='none' stroke='%23e57a56' stroke-width='1.7' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/images.css">
+</head>
+<body class="zh">
+
+<div id="progress"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="brand">
+    <svg class="glyph" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 25 L11 10 L16 19 L21 7 L29 25 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <span><b>Fin del Mundo</b><br><small>Patagonia · 2026</small></span>
+  </a>
+  <div class="nav-links" id="navlinks">
+    <a href="#overview">概览</a>
+    <a href="#journey">路途</a>
+    <a href="#itinerary">行程</a>
+    <a href="#climate">气候</a>
+    <a href="#experiences">体验</a>
+    <a href="#food">风味</a>
+    <a href="#stays">住宿</a>
+    <a href="#essentials">行前</a>
+    <a href="#packing">清单</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg bg-hero-fitzroy" id="heroBg"></div>
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <span class="kicker">09.26 — 10.07 · 2026 · Argentina</span>
+    <h1>巴塔哥尼亚<br><em>世界</em>的<span class="sc">尽头</span></h1>
+    <p class="sub">夫妻二人，向南，再向南——直到大陆碎成岛屿、风开始从冰原深处吹来。<b>布宜诺斯艾利斯</b>的余温、<b>火地岛</b>的海雾、<b>莫雷诺冰川</b>的轰鸣、<b>菲茨罗伊</b>破晓时分被点燃的花岗岩。这是一份为南半球初春写就的、可以照着走的十二日纪行。</p>
+    <div class="hero-meta">
+      <div class="m"><span>Duración</span><b>12 天 / 11 晚</b></div>
+      <div class="m"><span>Ruta</span><b>4 座落脚城市</b></div>
+      <div class="m"><span>Latitud</span><b>54.8°S 最南</b></div>
+      <div class="m"><span>Estación</span><b>南半球初春</b></div>
+    </div>
+  </div>
+  <div class="scrollcue"><div class="mouse"></div><span>下滑展开</span></div>
+</header>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="band" id="overview">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">01</span> · Panorama 概览</span>
+    <h2 class="h-sec">一条贴着安第斯脊背、<br>向南俯冲到海的<span class="sc">弧线</span></h2>
+    <p class="lede">从深圳出发，跨越大半个地球抵达<b>布宜诺斯艾利斯</b>，再一路向南：<b>乌斯怀亚</b>（地球最南端的城市）→ <b>埃尔卡拉法特</b>（莫雷诺冰川）→ <b>埃尔查尔滕</b>（菲茨罗伊峰下的徒步之都）。九月底十月初是南半球的早春——雪未化尽、夏季的狂风尚未登顶、游人寥寥，却也意味着每一处「招牌体验」都卡在开放与未开放的边缘。这份行程把每一个季节性的「开」与「关」都替你查清楚了。</p>
+
+    <div class="kpis reveal">
+      <div class="kpi"><div class="v" data-count="12">0</div><div class="l">旅程天数<span>09.26 – 10.07</span></div></div>
+      <div class="kpi"><div class="v" data-count="4">0</div><div class="l">落脚城市<span>BA · USH · FTE · CHALTÉN</span></div></div>
+      <div class="kpi"><div class="v">54.8<small>°S</small></div><div class="l">最南纬度<span>乌斯怀亚</span></div></div>
+      <div class="kpi"><div class="v">≈38<small>h</small></div><div class="l">单程在途<span>经圣保罗中转</span></div></div>
+      <div class="kpi"><div class="v" data-count="3">0</div><div class="l">大冰川<span>莫雷诺·马夏尔·别德马</span></div></div>
+      <div class="kpi"><div class="v">~13<small>h</small></div><div class="l">初春日照<span>每日 +3~4 分钟</span></div></div>
+    </div>
+
+    <div class="map-shell reveal">
+      <div id="map" role="img" aria-label="行程地图：深圳经圣保罗飞往布宜诺斯艾利斯，再向南至乌斯怀亚、埃尔卡拉法特与埃尔查尔滕"></div>
+      <div class="map-legend">
+        <span><i class="dot"></i>落脚点 Stops</span>
+        <span><i class="air"></i>飞行航段 Flights</span>
+        <span><i class="ground"></i>陆路（巴士）Ground</span>
+        <span style="color:var(--ink-dim)">点击标记跳转行程 · 双击地图查看跨洲全程</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="band-tight" id="journey">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">02</span> · El Viaje 路途</span>
+    <h2 class="h-sec">抵达「世界尽头」，<br>本身就是地球上最长的<span class="sc">旅程</span>之一</h2>
+    <p class="lede">没有任何航班能从中国直飞布宜诺斯艾利斯。无论你选哪家航司，最终都要经由<b>圣保罗（GRU）</b>这扇南美门户，再短跳约 2.5 小时进入布宜诺斯艾利斯。全程约 <b>32–38 小时</b>，往返经济舱约 <b>USD 1,700–2,500/人</b>。</p>
+
+    <div class="cards c4 reveal">
+      <div class="card"><div class="c-body">
+        <h3>土耳其航空</h3><div class="es">via Istanbul → GRU</div>
+        <p>亚洲—阿根廷班次最密的一条。IST→GRU 约 13h50，是世界最长航段之一；2026 年起<b>土耳其对华免签</b>，中转无忧。</p>
+        <div class="ftr"><span class="chip cool">中转 IST</span><span class="chip">~36h</span></div>
+      </div></div>
+      <div class="card"><div class="c-body">
+        <h3>卡塔尔航空</h3><div class="es">via Doha → GRU</div>
+        <p>多哈—圣保罗约 15 小时，机上服务顶级。中卡<b>互免签证</b>，多哈中转可出可不出。</p>
+        <div class="ftr"><span class="chip cool">中转 DOH</span><span class="chip">~34h</span></div>
+      </div></div>
+      <div class="card"><div class="c-body">
+        <h3>埃塞俄比亚航空</h3><div class="es">深圳直飞 ADD → GRU</div>
+        <p>常为价格最低的一条，且<b>深圳直飞亚的斯亚贝巴</b>，省去国内段。ADD→GRU 跨大西洋长途。</p>
+        <div class="ftr"><span class="chip gold">SZX 起飞</span><span class="chip">最经济</span></div>
+      </div></div>
+      <div class="card"><div class="c-body">
+        <h3>阿联酋航空</h3><div class="es">via Dubai → GRU</div>
+        <p>经迪拜，A380 宽体舒适。中阿联酋<b>互免签证</b>，迪拜中转体验好，价格略高。</p>
+        <div class="ftr"><span class="chip cool">中转 DXB</span><span class="chip">~37h</span></div>
+      </div></div>
+    </div>
+
+    <div class="cards c2" style="margin-top:24px">
+      <div class="callout flag reveal"><b>签证：这趟行程的命门是「美签」。</b> 自 2025 年中起，持<b>有效美国签证（B1/B2 等）</b>的中国护照可<b>免签入境阿根廷</b>，停留 30 天、可再延 30 天，无需办理 AVE 或领事签证。⚠️ <b>申根签证已不再适用</b>。若没有美签，须提前向阿根廷领事馆申请旅游签。出发前务必确认两人美签在 10/07 之后仍然有效。</div>
+      <div class="callout flag reveal d1"><b>布宜诺斯艾利斯的「机场陷阱」。</b> 国际航班降落在 <b>EZE（埃塞萨）</b>，而飞往乌斯怀亚/卡拉法特的国内航班从市区的 <b>AEP（纽贝里）</b>起飞。两场相距约 37 km、车程 60–90 分钟。<b>切勿当天国际转国内</b>——务必在布宜诺斯艾利斯过一夜，留足 4–5 小时缓冲。</div>
+    </div>
+
+    <div class="cards c2" style="margin-top:24px">
+      <div class="callout tip reveal"><b>境内航段无需绕回首都。</b> 阿根廷航空有<b>乌斯怀亚 ↔ 埃尔卡拉法特直飞</b>（约 1h20，每日约两班），不必折返布宜诺斯艾利斯。AEP↔乌斯怀亚每日 40+ 班。淡季时刻会缩减，建议尽早锁定。</div>
+      <div class="callout tip reveal d1"><b>时差与昼夜。</b> 阿根廷全境 UTC−3、不实行夏令时，比深圳<b>慢 11 小时</b>。向西飞、「赚」回 11 小时，倒时差相对友好——抵达头两天会傍晚犯困、清晨早醒，正好赶上巴塔哥尼亚清晨最平静的光线。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ITINERARY ============ -->
+<section class="band" id="itinerary">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">03</span> · Itinerario 逐日行程</span>
+    <h2 class="h-sec">十二天，<span class="sc">逐日</span>展开</h2>
+    <p class="lede">每一天都标注了<b>当地天气、日照、当日花费要点</b>与<b>季节性提醒</b>。节奏以风景与轻徒步为主：冰川游船、观景台、世界尽头火车、半天以内的步道——把力气留给真正震撼的那几个瞬间。</p>
+
+    <div class="trip-grid">
+      <!-- DAY NAV -->
+      <nav class="daynav" id="daynav" aria-label="逐日跳转">
+        <div class="leg">Buenos Aires</div>
+        <a href="#d1"><span class="d">D1</span>启程·深圳</a>
+        <a href="#d2"><span class="d">D2</span>抵达·首都</a>
+        <div class="leg">Ushuaia · 火地岛</div>
+        <a href="#d3"><span class="d">D3</span>飞向最南</a>
+        <a href="#d4"><span class="d">D4</span>火地岛 + 火车</a>
+        <a href="#d5"><span class="d">D5</span>比格尔海峡</a>
+        <div class="leg">El Calafate · 冰川</div>
+        <a href="#d6"><span class="d">D6</span>转场·卡拉法特</a>
+        <a href="#d7"><span class="d">D7</span>莫雷诺冰川</a>
+        <a href="#d8"><span class="d">D8</span>冰上徒步</a>
+        <div class="leg">El Chaltén · 菲茨罗伊</div>
+        <a href="#d9"><span class="d">D9</span>进山·查尔滕</a>
+        <a href="#d10"><span class="d">D10</span>菲茨罗伊脚下</a>
+        <a href="#d11"><span class="d">D11</span>托雷湖·返程</a>
+        <div class="leg">Regreso</div>
+        <a href="#d12"><span class="d">D12</span>告别·北归</a>
+      </nav>
+
+      <!-- DAYS -->
+      <div class="days">
+
+        <!-- D1 -->
+        <article class="day reveal" id="d1">
+          <div class="day-hero photo bg-milky-way" data-img="milky_way"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 01</span> 周六 · 09/26</span>
+            <h3>向着相反的季节起飞</h3>
+            <div class="where"><span class="pin">✈</span> 深圳 SZX — 经中转枢纽 — 圣保罗 GRU</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>深圳宝安启程</b><p>经土耳其/卡塔尔/迪拜或亚的斯亚贝巴枢纽飞往南美。把行程单、酒店确认、保险与美签复印件都存进手机离线。</p></div></div>
+              <div class="row"><div class="t">夜间</div><div class="ev"><b>跨洲长途</b><p>调表到 UTC−3、按布宜诺斯艾利斯作息睡觉，是对抗时差的第一招。靠窗、颈枕、压缩袜——准备一场约 30 小时的飞行。</p></div></div>
+              <div class="row"><div class="t">—</div><div class="ev"><b>越过赤道，进入南半球</b><p>从北半球的初秋飞入南半球的初春。日期与季节同时反转：你正离开变冷的世界，奔向一个正在转暖（但仍很冷）的世界。</p></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>性质</span><b>跨洋飞行日</b></div>
+                <div class="frow"><span>住宿</span><b>机上 / 中转</b></div>
+                <div class="frow"><span>关键</span><b>按 BA 时间作息</b></div>
+              </div>
+              <div class="callout lore">没有「中国直飞阿根廷」这回事——所有路线都要经圣保罗这扇门。把这段超长旅途当作仪式：地球上很少有目的地，需要你飞过整整一个对跖点才能抵达。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D2 -->
+        <article class="day reveal" id="d2">
+          <div class="day-hero photo bg-buenos-aires" data-img="buenos_aires"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 02</span> 周日 · 09/27</span>
+            <h3>南美门户 · 缓冲的一夜</h3>
+            <div class="where"><span class="pin">◎</span> 布宜诺斯艾利斯 Buenos Aires</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">午后</div><div class="ev"><b>降落 EZE 国际机场</b><p>过海关、取行李。预约 Tienda León 机场大巴或 remís 专车进城（约 1 小时）。</p><div class="meta"><span class="chip">EZE → 市区</span><span class="chip">~60–90 min</span></div></div></div>
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>入住市区，倒时差</b><p>选 Recoleta 或 Palermo 一带落脚。先小睡，再出门——别硬扛。</p></div></div>
+              <div class="row"><div class="t">晚</div><div class="ev"><b>第一顿阿根廷牛排</b><p>就近找一家 parrilla，bife de chorizo 配一杯门多萨马尔贝克。早点回，明天还要飞。</p><div class="meta"><span class="chip warm">Asado</span><span class="chip warm">Malbec</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>天气</span><b>18° / 10° 温和</b></div>
+                <div class="frow"><span>住宿</span><b>布宜诺斯艾利斯</b></div>
+                <div class="frow"><span>任务</span><b>过夜缓冲 + 换些比索</b></div>
+              </div>
+              <div class="callout tip">这一夜的意义是「保险」：把国际航班的延误风险与第二天的国内航班彻底隔开。顺便在大城市用 Western Union / 取款机备一点现金——巴塔哥尼亚小镇取现不便。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D3 -->
+        <article class="day reveal" id="d3">
+          <div class="day-hero photo bg-ushuaia-town" data-img="ushuaia_town"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 03</span> 周一 · 09/28</span>
+            <h3>飞向地球最南的城市</h3>
+            <div class="where"><span class="pin">✈</span> 布宜诺斯艾利斯 AEP — 乌斯怀亚 Ushuaia</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>布宜诺斯艾利斯惊鸿一瞥</b><p>七月九日大道与方尖碑、Recoleta 公墓或 Caminito 彩色街巷，挑一处一小时打卡。咖啡 + medialunas 早餐。</p></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>AEP 飞乌斯怀亚</b><p>从市区的纽贝里机场起飞，约 3.5 小时直达。航程后段开始出现雪山与海湾，提前占好靠窗。</p><div class="meta"><span class="chip cool">~3h30</span><span class="chip">阿根廷航空 / JetSMART</span></div></div></div>
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>抵达「世界尽头」</b><p>乌斯怀亚被安第斯余脉与比格尔海峡夹在中间。入住、沿海港散步，看渔船与雪峰同框。</p></div></div>
+              <div class="row"><div class="t">晚</div><div class="ev"><b>帝王蟹初体验</b><p>Av. Maipú 海滨的老馆子——点 centolla（帝王蟹）前先问一句「¿es fresca?」（是鲜活的吗）。</p><div class="meta"><span class="chip warm">Centolla</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>天气</span><b>8° / 2° 多云海风</b></div>
+                <div class="frow"><span>日照</span><b>~12.7 h</b></div>
+                <div class="frow"><span>住宿</span><b>乌斯怀亚（首夜）</b></div>
+              </div>
+              <div class="callout lore">乌斯怀亚自称 <em>el fin del mundo</em>——世界尽头。它是通往南极的跳板，也是泛美公路 3 号线的终点。从这里向南，只剩海、岛屿，与德雷克海峡。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D4 -->
+        <article class="day reveal" id="d4">
+          <div class="day-hero photo bg-tdf-park" data-img="tdf_park"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 04</span> 周二 · 09/29</span>
+            <h3>火地岛国家公园 + 世界尽头火车</h3>
+            <div class="where"><span class="pin">◎</span> Parque Nacional Tierra del Fuego</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>世界尽头火车 Tren del Fin del Mundo</b><p>窄轨蒸汽小火车，沿当年囚徒伐木的路线驶入国家公园，往返约 1h45，途中在 La Macarena 瀑布停靠拍照。全年运营。</p><div class="meta"><span class="chip cool">~1h45</span><span class="chip">旅游舱 ~USD 40</span></div></div></div>
+              <div class="row"><div class="t">午间</div><div class="ev"><b>拉帕塔亚湾 Bahía Lapataia</b><p>泛美公路在此「终结」——著名的「3 号公路终点」路牌。周边是平坦的泥炭沼泽木栈道、黑湖（Laguna Negra）与海湾观景点。</p></div></div>
+              <div class="row"><div class="t">下午</div><div class="ev"><b>海岸步道 Senda Costera</b><p>公园的招牌轻徒步：沿比格尔海峡岸线穿过 lenga 林与小海湾，单程约 8 km、2–3 小时，几乎无爬升。只走一段也值。</p><div class="meta"><span class="chip">易 · 平缓</span><span class="chip cool">海岸线</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>门票</span><b>外籍现金比索</b></div>
+                <div class="frow"><span>路况</span><b>初春泥泞，防水鞋</b></div>
+                <div class="frow"><span>住宿</span><b>乌斯怀亚</b></div>
+              </div>
+              <div class="callout flag">国家公园门票<b>仅收现金比索、闸口不刷卡</b>，提前在镇上备好。火车票与门票分开购买。初春融雪期步道偏泥泞，木栈道覆盖最湿的路段。</div>
+              <div class="callout tip">想看雪？<b>Cerro Castor</b>（世界最南滑雪场）2026 雪季预计 <b>10/4 关闭</b>——只有行程头几天还开着，想体验要趁早。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D5 -->
+        <article class="day reveal" id="d5">
+          <div class="day-hero photo bg-lighthouse" data-img="lighthouse"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 05</span> 周三 · 09/30</span>
+            <h3>比格尔海峡 · 灯塔与海兽</h3>
+            <div class="where"><span class="pin">⛵</span> Canal Beagle — Faro Les Éclaireurs</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>比格尔海峡游船</b><p>从市区码头出海，半日航程：海狮岛（Isla de los Lobos）、鸬鹚栖息的鸟岛，与立在礁石上的<b>Les Éclaireurs 灯塔</b>（常被误称「世界尽头的灯塔」）。</p><div class="meta"><span class="chip cool">半日 3–4h</span><span class="chip">海狮 · 鸬鹚 · 灯塔</span></div></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>马夏尔冰川 Glaciar Martial</b><p>乌斯怀亚「后花园」的悬冰川，徒步上行可俯瞰全城与海峡。注：缆车（aerosilla）2026 年疑似停运检修，多为步行上山。</p><div class="meta"><span class="chip warm">缆车或停运</span></div></div></div>
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>世界尽头的一餐</b><p>Kalma Resto（精致火地岛料理）或老宅里的 Volver。帝王蟹、黑贻贝、巴塔哥尼亚羊。</p></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>天气</span><b>多云 · 海风强</b></div>
+                <div class="frow"><span>住宿</span><b>乌斯怀亚（末夜）</b></div>
+                <div class="frow"><span>明日</span><b>飞埃尔卡拉法特</b></div>
+              </div>
+              <div class="callout flag"><b>企鹅的遗憾。</b> 马蒂略岛（Isla Martillo）登岛与麦哲伦企鹅同行的 Piratour，季节通常 <b>~10 月 10 日才开放</b>，恰在你离开后几天。可改选「只在船上远观企鹅」的航次，或发邮件 info@piratour.net 确认 2026 开放日——也许就差那么几天。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D6 -->
+        <article class="day reveal" id="d6">
+          <div class="day-hero photo bg-lago-argentino" data-img="lago_argentino"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 06</span> 周四 · 10/01</span>
+            <h3>转场冰川之城</h3>
+            <div class="where"><span class="pin">✈</span> 乌斯怀亚 — 埃尔卡拉法特 El Calafate</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>直飞埃尔卡拉法特</b><p>乌斯怀亚直飞卡拉法特，约 1h20，沿途俯瞰南巴塔哥尼亚冰原。无需折返首都。</p><div class="meta"><span class="chip cool">~1h20 直飞</span></div></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>冰川博物馆 Glaciarium</b><p>镇外 6 km 的现代冰川学博物馆，讲透南巴塔哥尼亚冰原与气候。地下还有用冰川冰建的 GlacioBar 冰吧。阴冷天的完美去处。</p></div></div>
+              <div class="row"><div class="t">黄昏</div><div class="ev"><b>尼梅斯湖鸟类保护区 Laguna Nimez</b><p>阿根廷湖畔的木栈道，火烈鸟、黑颈天鹅与上百种鸟。初春候鸟陆续抵达，黄昏光线最好。</p><div class="meta"><span class="chip gold">火烈鸟</span><span class="chip gold">黑颈天鹅</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>天气</span><b>12° / 1° 干燥多风</b></div>
+                <div class="frow"><span>风</span><b>均速 ~31 km/h</b></div>
+                <div class="frow"><span>住宿</span><b>埃尔卡拉法特</b></div>
+              </div>
+              <div class="callout lore">卡拉法特得名于一种深蓝色浆果——<em>calafate</em>。当地谚语：吃了卡拉法特果，终将重返巴塔哥尼亚。糖渍果酱配甜点，别错过。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D7 -->
+        <article class="day reveal" id="d7">
+          <div class="day-hero photo bg-perito-moreno-ice" data-img="perito_moreno_ice"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 07</span> 周五 · 10/02</span>
+            <h3>莫雷诺冰川 · 听冰崩塌</h3>
+            <div class="where"><span class="pin">◎</span> Glaciar Perito Moreno — Los Glaciares</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>冰川观景栈道 Pasarelas</b><p>镇外约 80 km。五条彩色分级的金属栈道网，正对约 5 km 宽、70 m 高的冰墙，最近处仅约 300 m。整段坡度平缓，可逛 2–4 小时。</p><div class="meta"><span class="chip cool">栈道 4–5.5 km</span><span class="chip">无难度</span></div></div></div>
+              <div class="row"><div class="t">不时</div><div class="ev"><b>等一次冰崩 Calving</b><p>巨大的冰块毫无预兆地从冰墙崩落、砸进阿根廷湖，先看见、几秒后才听到炮响般的轰鸣。这是莫雷诺最摄人心魄的时刻，全天随机上演。</p></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>冰川游船 Safari Náutico</b><p>从 Bajo de las Sombras 码头登船，贴近冰川南墙约 400 m，从水面仰视那道蓝白色的悬崖。</p><div class="meta"><span class="chip cool">~1h 游船</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>门票</span><b>外籍现金比索</b></div>
+                <div class="frow"><span>车程</span><b>镇 → 冰川 ~1h30</b></div>
+                <div class="frow"><span>住宿</span><b>埃尔卡拉法特</b></div>
+              </div>
+              <div class="callout tip">莫雷诺是世界上少数仍在「前进」的冰川之一，<b>全年可达</b>，不受季节影响。初春游人稀少，栈道几乎独享。带上偏光墨镜——冰面反光极强。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D8 -->
+        <article class="day reveal" id="d8">
+          <div class="day-hero photo bg-perito-moreno" data-img="perito_moreno"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 08</span> 周六 · 10/03</span>
+            <h3>走到冰川上去</h3>
+            <div class="where"><span class="pin">🥾</span> Minitrekking · Hielo y Aventura</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">全天</div><div class="ev"><b>莫雷诺冰上徒步 Minitrekking</b><p>乘船过湖，穿冰爪，在向导带领下在冰川表面行走约 1.5 小时——蓝色的冰裂隙、冰洞、融水溪流近在脚下。这是<b>本季正当时</b>的招牌体验（季节自 9 月中至次年 4 月底）。</p><div class="meta"><span class="chip cool">冰上 ~1.5h</span><span class="chip gold">本季开放</span></div></div></div>
+              <div class="row"><div class="t">备选</div><div class="ev"><b>或：庄园烤全羊 Estancia</b><p>不想上冰，可改去草原庄园：十字架上慢烤的巴塔哥尼亚羊（cordero al palo）、骑马、高乔文化。Nibepo Aike 是经典之选。</p><div class="meta"><span class="chip warm">Cordero al palo</span></div></div></div>
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>回镇晚餐</b><p>La Tablita 的炭火烤羊，或 Mi Rancho 的百年老宅小馆。提前订位。</p></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>预订</span><b>提前 7–10 天</b></div>
+                <div class="frow"><span>年龄</span><b>Mini ~8–65 岁</b></div>
+                <div class="frow"><span>住宿</span><b>埃尔卡拉法特（末夜）</b></div>
+              </div>
+              <div class="callout tip">想更硬核可选 <b>Big Ice</b>（冰上 3–4 小时，体能要求高，需提前 2–3 周预订）。Mini Trekking 老少皆宜，是「走上一座活冰川」最稳妥的方式。冰爪与装备由运营方提供。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D9 -->
+        <article class="day reveal" id="d9">
+          <div class="day-hero photo bg-el-chalten" data-img="el_chalten"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 09</span> 周日 · 10/04</span>
+            <h3>进山 · 徒步之都</h3>
+            <div class="where"><span class="pin">🚌</span> 埃尔卡拉法特 — 埃尔查尔滕 El Chaltén</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>巴士进山</b><p>沿 RP11 + RN40 行驶约 213 km、3 小时，穿过金色草原，菲茨罗伊与托雷峰逐渐在地平线升起。Chaltén Travel / Caltur / Taqsa 每日多班。</p><div class="meta"><span class="chip cool">~3h · 213 km</span></div></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>入住「徒步之都」</b><p>埃尔查尔滕是个为登山者而生的小镇，所有步道几乎都从镇里直接起步。先到镇口的<b>护林站</b>问当日步道与积雪情况。</p></div></div>
+              <div class="row"><div class="t">黄昏</div><div class="ev"><b>秃鹰观景台 Mirador de los Cóndores / las Águilas</b><p>镇边最轻松的步道，往返约 1 小时即可 360° 俯瞰菲茨罗伊山群与河谷；向东延伸可眺望别德马湖。黄昏金光绝佳。</p><div class="meta"><span class="chip">易 · 1h</span><span class="chip warm">日落点</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>天气</span><b>8° / 0° 最冷一站</b></div>
+                <div class="frow"><span>风</span><b>均 ~34 km/h，阵风更猛</b></div>
+                <div class="frow"><span>住宿</span><b>埃尔查尔滕</b></div>
+              </div>
+              <div class="callout flag"><b>带够现金！</b> 埃尔查尔滕<b>几乎没有可靠的 ATM、刷卡时灵时不灵</b>。离开卡拉法特前，务必备齐这几天的住宿、餐饮与接驳现金（比索）。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D10 -->
+        <article class="day reveal" id="d10">
+          <div class="day-hero photo bg-fitzroy-massif" data-img="fitzroy_massif"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 10</span> 周一 · 10/05</span>
+            <h3>菲茨罗伊脚下</h3>
+            <div class="where"><span class="pin">⛰</span> Cerro Fitz Roy / Chaltén · 3,405 m</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">破晓</div><div class="ev"><b>追一场日照金山</b><p>晴天的清晨，第一缕阳光会把菲茨罗伊的花岗岩尖峰染成炽烈的橙红——这就是本站的灵魂画面。从镇边观景台或上行步道半途即可守候。</p><div class="meta"><span class="chip warm">Alpenglow</span></div></div></div>
+              <div class="row"><div class="t">上午</div><div class="ev"><b>菲茨罗伊步道下半程</b><p>朝三湖（Laguna de los Tres）方向走，到 <b>Capri 湖 / 菲茨罗伊观景点</b>赏景野餐，在最后那段陡峭冰雪路之前折返——风景已然壮阔。</p><div class="meta"><span class="chip cool">轻 / 中 · 半程</span></div></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>Chorrillo del Salto 瀑布</b><p>几乎全程平坦的林间步道（往返约 6.6 km），通往一道清瀑。轻松收尾。</p></div></div>
+              <div class="row"><div class="t">傍晚</div><div class="ev"><b>精酿啤酒收工</b><p>La Cervecería 的本地精酿配玉米炖肉（locro），或 La Tapera 的家常巴塔哥尼亚菜。</p><div class="meta"><span class="chip gold">Cerveza artesanal</span></div></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>三湖全程</span><b>20–25 km · 8–10h</b></div>
+                <div class="frow"><span>初春末段</span><b>结冰 · 需微齿冰爪</b></div>
+                <div class="frow"><span>住宿</span><b>埃尔查尔滕</b></div>
+              </div>
+              <div class="callout flag">通往三湖的<b>最后约 1 km 陡坡在初春常被冰雪覆盖</b>，需要微齿冰爪、且有滑坠风险。对以风景为主的二人，走到下半程的菲茨罗伊观景点折返，是更明智的选择。出发前必问护林站当日实况。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D11 -->
+        <article class="day reveal" id="d11">
+          <div class="day-hero photo bg-laguna-torre" data-img="laguna_torre"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 11</span> 周二 · 10/06</span>
+            <h3>托雷湖 · 然后北归</h3>
+            <div class="where"><span class="pin">🚌</span> El Chaltén — El Calafate — 飞 Buenos Aires</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">清晨</div><div class="ev"><b>托雷湖步道（下半程）</b><p>比三湖平缓得多的一条：朝 Cerro Torre 方向走到 <b>Mirador Cerro Torre</b> 折返，看那座几乎永远裹在云里的针尖。或就近再走一段 Chorrillo。</p><div class="meta"><span class="chip cool">中 · 较平缓</span></div></div></div>
+              <div class="row"><div class="t">午间</div><div class="ev"><b>巴士返回卡拉法特</b><p>~3 小时车程穿回草原。最后看一眼菲茨罗伊在后视镜里缩小、消失。</p></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>飞回布宜诺斯艾利斯</b><p>卡拉法特机场（FTE）飞 AEP，约 3 小时。今晚在布宜诺斯艾利斯过夜，把明天的国际航班风险隔离开。</p><div class="meta"><span class="chip cool">FTE → AEP ~3h</span></div></div></div>
+              <div class="row"><div class="t">晚</div><div class="ev"><b>告别晚餐</b><p>Palermo 的小酒馆，一顿正经 asado，或一场探戈秀。为这趟旅程干杯。</p></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>路线</span><b>山 → 机场 → 首都</b></div>
+                <div class="frow"><span>住宿</span><b>布宜诺斯艾利斯</b></div>
+                <div class="frow"><span>提醒</span><b>AEP→EZE 跨城</b></div>
+              </div>
+              <div class="callout tip">在首都过这一夜，就是为了明天从容地从 AEP/市区转去 EZE 国际机场——别把跨城转场压在登机当天的最后一刻。</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- D12 -->
+        <article class="day reveal" id="d12">
+          <div class="day-hero photo bg-condor" data-img="condor"><div class="tint"></div><div class="h">
+            <span class="day-tag"><span class="num">DÍA 12</span> 周三 · 10/07</span>
+            <h3>像安第斯神鹰一样，向北</h3>
+            <div class="where"><span class="pin">✈</span> Buenos Aires EZE — 圣保罗 — 深圳</div>
+          </div></div>
+          <div class="day-body">
+            <div class="sched">
+              <div class="row"><div class="t">上午</div><div class="ev"><b>布宜诺斯艾利斯最后几小时</b><p>买盒 alfajores 与一袋马黛茶当手信，咖啡馆里写完最后一页旅行笔记。</p></div></div>
+              <div class="row"><div class="t">午后</div><div class="ev"><b>转往 EZE，启程回家</b><p>预留充足时间跨城去埃塞萨国际机场。经圣保罗与中转枢纽飞回深圳。</p><div class="meta"><span class="chip">市区 → EZE</span><span class="chip">留足 3–4h</span></div></div></div>
+              <div class="row"><div class="t">—</div><div class="ev"><b>越过赤道，回到北半球的秋天</b><p>因时差与航程，约在 <b>10/09</b> 抵达深圳。把南半球的风与冰，留在记忆里。</p></div></div>
+            </div>
+            <div class="aside">
+              <div class="factbox"><h4>当日要点</h4>
+                <div class="frow"><span>性质</span><b>跨洋返程日</b></div>
+                <div class="frow"><span>抵深</span><b>约 10/09</b></div>
+                <div class="frow"><span>手信</span><b>Alfajores · Mate · Malbec</b></div>
+              </div>
+              <div class="callout lore">谚语说，吃过卡拉法特浆果的人，终会重返巴塔哥尼亚。也许这不是终点，只是下一次的序章。</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIMATE ============ -->
+<section class="band" id="climate">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">04</span> · Clima & Luz 气候与光</span>
+    <h2 class="h-sec">初春的巴塔哥尼亚<br>是<span class="sc">一日四季</span></h2>
+    <p class="lede">九月底十月初，雪线尚低、白昼正快速变长、而臭名昭著的夏季狂风还没登顶。冷、风、强紫外线——是这一程真正的三个对手；而非高原（这里几乎没有海拔问题）。</p>
+
+    <div class="climate">
+      <div class="cl-card reveal">
+        <div class="loc"><b>布宜诺斯艾利斯</b><span class="lat">34.6°S</span></div>
+        <div class="temp"><span class="hi">18°</span><span class="u">/</span><span class="lo">10°</span><span class="u">C</span></div>
+        <div class="bars">
+          <div class="bar">风力 · 温和<div class="track"><div class="fill" style="width:30%;background:var(--glacier-500)"></div></div></div>
+          <div class="bar">紫外线 · 中等<div class="track"><div class="fill" style="width:45%;background:var(--steppe-400)"></div></div></div>
+          <div class="bar">日照 · ~12.0 h<div class="track"><div class="fill" style="width:50%;background:var(--dawn-400)"></div></div></div>
+        </div>
+      </div>
+      <div class="cl-card reveal d1">
+        <div class="loc"><b>乌斯怀亚</b><span class="lat">54.8°S</span></div>
+        <div class="temp"><span class="hi">8°</span><span class="u">/</span><span class="lo">2°</span><span class="u">C</span></div>
+        <div class="bars">
+          <div class="bar">风力 · 海洋性 ~22 km/h<div class="track"><div class="fill" style="width:52%;background:var(--glacier-500)"></div></div></div>
+          <div class="bar">紫外线 · 高（臭氧洞）<div class="track"><div class="fill" style="width:72%;background:var(--steppe-400)"></div></div></div>
+          <div class="bar">日照 · ~12.7 h ↑最快<div class="track"><div class="fill" style="width:60%;background:var(--dawn-400)"></div></div></div>
+        </div>
+      </div>
+      <div class="cl-card reveal d2">
+        <div class="loc"><b>埃尔卡拉法特</b><span class="lat">50.3°S</span></div>
+        <div class="temp"><span class="hi">12°</span><span class="u">/</span><span class="lo">1°</span><span class="u">C</span></div>
+        <div class="bars">
+          <div class="bar">风力 · 草原 ~31 km/h<div class="track"><div class="fill" style="width:74%;background:var(--glacier-500)"></div></div></div>
+          <div class="bar">紫外线 · 很高<div class="track"><div class="fill" style="width:82%;background:var(--steppe-400)"></div></div></div>
+          <div class="bar">日照 · ~12.8 h<div class="track"><div class="fill" style="width:62%;background:var(--dawn-400)"></div></div></div>
+        </div>
+      </div>
+      <div class="cl-card reveal d3">
+        <div class="loc"><b>埃尔查尔滕</b><span class="lat">49.3°S</span></div>
+        <div class="temp"><span class="hi">8°</span><span class="u">/</span><span class="lo">0°</span><span class="u">C</span></div>
+        <div class="bars">
+          <div class="bar">风力 · 阵风可破 100 km/h<div class="track"><div class="fill" style="width:92%;background:var(--glacier-500)"></div></div></div>
+          <div class="bar">紫外线 · 很高 + 雪地反射<div class="track"><div class="fill" style="width:86%;background:var(--steppe-400)"></div></div></div>
+          <div class="bar">日照 · ~12.9 h<div class="track"><div class="fill" style="width:64%;background:var(--dawn-400)"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="daylight-chart reveal">
+      <span class="eyebrow"><span class="no">☀</span> 白昼如何生长 · Daylight</span>
+      <div id="daylightChart"></div>
+      <p style="color:var(--ink-soft);font-size:13.5px;margin:18px 0 0;max-width:70ch">你恰好在<b>秋分（~9/22）之后</b>抵达南半球：昼夜近乎等长，而后白昼以每天约 <b>3–4 分钟</b>的速度变长，纬度越南增长越快。整程白昼从约 12.3 h 长到约 13.6 h，加上高纬度漫长的晨昏微光——足够支撑你每天的徒步与赶路，清晨出发还能避开午后最猛的风。</p>
+    </div>
+
+    <div class="callout flag reveal" style="margin-top:28px">
+      <b>别被「冷」骗了——这里的紫外线能在阴天把你晒伤。</b> 每年 9–10 月南极臭氧洞达到最大，并会数次北移、笼罩巴塔哥尼亚。臭氧骤降时，紫外线指数可从「中」(~4) 跳到「很高」(~10)；叠加雪地反射（紫外线几乎翻倍）与高纬清澈空气，<b>即使体感寒冷、天色灰蒙，也会晒伤得很快</b>。请把它当作冰川/高山级别的防晒来对待：SPF50+、UV400 包裹墨镜、宽檐帽，每天补涂。
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCES ============ -->
+<section class="band-tight" id="experiences">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">05</span> · Imperdibles 招牌体验</span>
+    <h2 class="h-sec">把力气，留给<br>真正<span class="sc">震撼</span>的瞬间</h2>
+    <p class="lede">下面六件事，是这一程的高光。每一件都标注了在你的<b>初春窗口（9/26–10/07）</b>是否当季——这正是别处行程最容易踩空的地方。</p>
+
+    <div class="cards c3">
+      <div class="card reveal"><div class="pic"><div class="photo bg-perito-moreno-ice" data-img="perito_moreno_ice"></div><span class="chip gold season">本季开放</span></div>
+        <div class="c-body"><h3>冰上徒步</h3><div class="es">Minitrekking · Perito Moreno</div>
+          <p>穿上冰爪，走上一座仍在前进的活冰川。蓝冰、冰洞、融水溪流在脚边。冰季自 9 月中至 4 月底——你来得正好。</p>
+          <div class="ftr"><span class="chip cool">~1.5h 冰上</span><span class="chip">需提前预订</span></div></div></div>
+
+      <div class="card reveal d1"><div class="pic"><div class="photo bg-beagle-channel" data-img="beagle_channel"></div></div>
+        <div class="c-body"><h3>比格尔海峡</h3><div class="es">Canal Beagle · Ushuaia</div>
+          <p>出海驶向 Les Éclaireurs 灯塔，途经海狮岛与鸬鹚鸟岛。世界尽头的海，灰蓝、清冷、辽阔。</p>
+          <div class="ftr"><span class="chip cool">半日游船</span><span class="chip">海狮·鸬鹚</span></div></div></div>
+
+      <div class="card reveal d2"><div class="pic"><div class="photo bg-eotw-train" data-img="eotw_train"></div><span class="chip gold season">全年运营</span></div>
+        <div class="c-body"><h3>世界尽头火车</h3><div class="es">Tren del Fin del Mundo</div>
+          <p>窄轨蒸汽小火车，重走当年囚徒的伐木线，驶入火地岛国家公园，途中停靠 La Macarena 瀑布。</p>
+          <div class="ftr"><span class="chip cool">~1h45</span><span class="chip">~USD 40</span></div></div></div>
+
+      <div class="card reveal"><div class="pic"><div class="photo bg-perito-moreno" data-img="perito_moreno"></div></div>
+        <div class="c-body"><h3>冰墙与冰崩</h3><div class="es">Pasarelas & Calving</div>
+          <p>在彩色栈道上正对 5 km 宽、70 m 高的冰墙，等一次毫无预兆的冰崩——先见其形，后闻其声。</p>
+          <div class="ftr"><span class="chip cool">栈道 4–5.5 km</span><span class="chip">全年</span></div></div></div>
+
+      <div class="card reveal d1"><div class="pic"><div class="photo bg-hero-fitzroy" data-img="hero_fitzroy"></div><span class="chip warm season">日照金山</span></div>
+        <div class="c-body"><h3>菲茨罗伊破晓</h3><div class="es">Amanecer · Cerro Chaltén</div>
+          <p>晴天清晨，第一缕光把花岗岩尖峰点燃成橙红。Patagonia 那个著名山形 logo，本尊就在你眼前。</p>
+          <div class="ftr"><span class="chip warm">破晓守候</span><span class="chip">观景台</span></div></div></div>
+
+      <div class="card reveal d2"><div class="pic"><div class="photo bg-lamb-asado" data-img="lamb_asado"></div></div>
+        <div class="c-body"><h3>庄园烤全羊</h3><div class="es">Cordero al palo · Estancia</div>
+          <p>十字架上慢烤数小时的巴塔哥尼亚羊，配草原、骑马与高乔人的火塘。一口下去全是烟火气。</p>
+          <div class="ftr"><span class="chip warm">炭火慢烤</span><span class="chip gold">高乔文化</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WILDLIFE ============ -->
+<section class="band-tight" id="wildlife">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">06</span> · Fauna 野生动物</span>
+    <h2 class="h-sec">谁住在<span class="sc">世界尽头</span></h2>
+    <p class="lede">巴塔哥尼亚的旷野属于这些居民。初春是观察它们的微妙窗口——有的刚归来、有的还没上岛。</p>
+
+    <div class="cards c3">
+      <div class="card reveal"><div class="pic"><div class="photo bg-guanaco" data-img="guanaco"></div></div>
+        <div class="c-body"><h3>原驼 Guanaco</h3><div class="es">Lama guanicoe</div>
+          <p>骆驼科的草原游民，成群游荡在金色的草甸与公路两侧，是巴塔哥尼亚最经典的剪影。</p></div></div>
+      <div class="card reveal d1"><div class="pic"><div class="photo bg-penguin" data-img="penguin"></div><span class="chip warm season">本季差几天</span></div>
+        <div class="c-body"><h3>麦哲伦企鹅</h3><div class="es">Spheniscus magellanicus</div>
+          <p>马蒂略岛的企鹅季约 10/10 才开始登岛——恰在你离开后。可选船上远观，或把它留给下一次。</p></div></div>
+      <div class="card reveal d2"><div class="pic"><div class="photo bg-sea-lions" data-img="sea_lions"></div></div>
+        <div class="c-body"><h3>南美海狮 Lobo marino</h3><div class="es">Otaria flavescens</div>
+          <p>比格尔海峡岩岛上成群的海狮，雄兽鬃毛厚重、叫声如雷，是出海航程的固定主角。</p></div></div>
+      <div class="card reveal"><div class="pic"><div class="photo bg-cormorant" data-img="cormorant"></div></div>
+        <div class="c-body"><h3>帝王鸬鹚 Cormorán</h3><div class="es">Imperial cormorant</div>
+          <p>蓝眼、黑白分明，密密麻麻铺满海峡的鸟岛，远看像给礁石撒了一层胡椒盐。</p></div></div>
+      <div class="card reveal d1"><div class="pic"><div class="photo bg-condor" data-img="condor"></div></div>
+        <div class="c-body"><h3>安第斯神鹰 Cóndor</h3><div class="es">Vultur gryphus</div>
+          <p>翼展可达 3 米的飞行巨兽，常在查尔滕的崖壁与峡谷上空盘旋，几乎不扇翅。运气好能在观景台正遇。</p></div></div>
+      <div class="card reveal d2"><div class="pic"><div class="photo bg-flamingo" data-img="flamingo"></div></div>
+        <div class="c-body"><h3>火烈鸟 & 黑颈天鹅</h3><div class="es">Laguna Nimez · El Calafate</div>
+          <p>阿根廷湖畔的浅滩里，粉色的智利火烈鸟与黑颈天鹅。初春候鸟陆续归来，是观鸟的好时节。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOD ============ -->
+<section class="band-tight" id="food">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">07</span> · Sabores 风味</span>
+    <h2 class="h-sec">炭火、海鲜、<br>与一杯<span class="sc">马尔贝克</span></h2>
+
+    <div class="feature reveal">
+      <div class="feat-media photo bg-lamb-asado" data-img="lamb_asado"></div>
+      <div class="feat-body">
+        <h3>从草原到火塘</h3>
+        <p style="color:var(--ink-soft);margin-top:16px">巴塔哥尼亚的味道是粗粝而慷慨的：</p>
+        <ul style="color:var(--ink-soft);font-size:14.5px;line-height:1.9;padding-left:18px;margin:8px 0 0">
+          <li><b>巴塔哥尼亚烤羊</b> Cordero al palo — 十字架上炭火慢烤，外焦里嫩</li>
+          <li><b>帝王蟹</b> Centolla — 乌斯怀亚招牌，10 月起进入鲜活季</li>
+          <li><b>阿根廷烤肉</b> Asado / Parrilla — 牛肋、香肠、血肠、烤奶酪</li>
+          <li><b>玉米炖肉</b> Locro · <b>巴塔哥尼亚鳟鱼</b> Trucha</li>
+          <li><b>门多萨马尔贝克</b> & 蓬勃的<b>精酿啤酒</b>（查尔滕尤盛）</li>
+          <li><b>Alfajores · 焦奶酱 · 马黛茶 · 卡拉法特浆果</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cards c3" style="margin-top:24px">
+      <div class="card reveal"><div class="c-body"><h3>乌斯怀亚</h3><div class="es">El Fin del Mundo</div>
+        <p><b>Kalma Resto</b> 精致火地岛料理 · <b>Tía Elvira / Volver</b> 海滨帝王蟹老馆 · <b>Almacén Ramos Generales</b> 百年杂货铺改的咖啡馆。</p>
+        <div class="ftr"><span class="chip warm">Centolla</span><span class="chip">海鲜</span></div></div></div>
+      <div class="card reveal d1"><div class="c-body"><h3>埃尔卡拉法特</h3><div class="es">Tierra de glaciares</div>
+        <p><b>La Tablita</b> 名声在外的炭火烤羊 · <b>Mi Rancho</b> 百年老宅小馆 · <b>Pura Vida</b> 南瓜盅炖羊 · <b>La Zaina</b> 巴塔哥尼亚菜。</p>
+        <div class="ftr"><span class="chip warm">Cordero</span><span class="chip gold">Calafate</span></div></div></div>
+      <div class="card reveal d2"><div class="c-body"><h3>埃尔查尔滕</h3><div class="es">Capital del Trekking</div>
+        <p><b>La Cervecería</b> 精酿 + locro · <b>La Tapera</b> 人气家常菜 · <b>Maffia</b> 木屋手工意面 · <b>La Oveja Negra</b> 山景烤羊。需提前订位。</p>
+        <div class="ftr"><span class="chip gold">精酿</span><span class="chip">手工面</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAYS ============ -->
+<section class="band-tight" id="stays">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">08</span> · Alojamiento 住宿</span>
+    <h2 class="h-sec">在哪里<span class="sc">枕着风</span>入睡</h2>
+    <p class="lede">三座小城，从舒适到奢华各给两三个口碑之选。旺季前夕（初春）多数已开门，但建议尽早预订热门房型。</p>
+
+    <div class="cards c3">
+      <div class="card reveal"><div class="pic"><div class="photo bg-ushuaia-town" data-img="ushuaia_town"></div><span class="chip cool badge">乌斯怀亚</span></div>
+        <div class="c-body">
+          <p><b>Arakur Resort &amp; Spa</b> — 崖顶五星，俯瞰比格尔海峡，无边泳池。<br><br><b>Los Cauquenes Resort</b> — 唯一坐落海滩之上的高端度假村。<br><br><b>Las Hayas Resort</b> — 山坡老牌山地度假酒店，室内泳池。</p>
+          <div class="ftr"><span class="chip warm">奢华</span><span class="chip cool">海景</span></div></div></div>
+
+      <div class="card reveal d1"><div class="pic"><div class="photo bg-lago-argentino" data-img="lago_argentino"></div><span class="chip cool badge">埃尔卡拉法特</span></div>
+        <div class="c-body">
+          <p><b>Xelena Hotel &amp; Suites</b> — 阿根廷湖畔五星，室内泳池与水疗。<br><br><b>Design Suites Calafate</b> — 山丘上的设计酒店，全景湖景。<br><br><b>Esplendor by Wyndham</b> — 市中心可靠精品四星。</p>
+          <div class="ftr"><span class="chip warm">奢华</span><span class="chip cool">湖景</span></div></div></div>
+
+      <div class="card reveal d2"><div class="pic"><div class="photo bg-el-chalten" data-img="el_chalten"></div><span class="chip cool badge">埃尔查尔滕</span></div>
+        <div class="c-body">
+          <p><b>Los Cerros del Chaltén</b> — 镇上最精致的精品酒店，山谷景 + 水疗。<br><br><b>Hostería Senderos</b> — 菲茨罗伊/托雷峰景，店员极懂行。<br><br><b>Destino Sur Hotel &amp; Spa</b> — 近公园入口，水疗，出门即步道。</p>
+          <div class="ftr"><span class="chip warm">精品</span><span class="chip gold">山景</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESSENTIALS ============ -->
+<section class="band" id="essentials">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">09</span> · Antes de Partir 行前必读</span>
+    <h2 class="h-sec">出发前，<br>把这些<span class="sc">弄明白</span></h2>
+    <p class="lede">钱、网、电、语言、健康与签证——巴塔哥尼亚偏远、季节敏感，这几件事提前搞定，旅程会顺很多。点开每一栏。</p>
+
+    <details class="acc reveal" open>
+      <summary><span class="ic">💳</span>货币与支付 · Dinero<span class="plus">+</span></summary>
+      <div class="acc-body">
+        <p>2025 年米莱政府放开外汇管制后，<b>官方汇率、MEP、「蓝色美元」已基本收敛</b>（2026 年初约 1,430–1,460 ARS/USD），昔日的巨大价差不再。</p>
+        <ul>
+          <li><b>外卡刷卡现在最划算。</b> Visa/Mastercard 自动按 MEP（游客）汇率结算，无需登记。刷卡时<b>务必选「以比索 ARS 计价」</b>，别让商户用 DCC 帮你换。</li>
+          <li><b>带些美元现金，但不必带一大叠。</b> 几百美元应急即可，用于不收卡的地方、小费与换汇。请带<b>崭新、无破损的钞票</b>（破旧钞会被拒收或压价），大面额（$100）汇率略好。</li>
+          <li><b>ATM 仅作备用</b>：单笔限额低（约 US$40）、手续费高（US$8–10/笔）。</li>
+          <li><b>Western Union</b> 仍可换好价，但<b>在卡拉法特不可靠</b>（限额低、网点早关）——要用请在布宜诺斯艾利斯先取。</li>
+          <li><b>小费</b>：餐厅约 10%（账单上的 <em>cubierto</em> 是餐位费、不是小费）；向导约 US$30–40/天/团；司机酌情。现金小费最稳。</li>
+          <li><b>埃尔查尔滕几乎无可靠 ATM</b>——进山前在卡拉法特备足现金。</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc reveal">
+      <summary><span class="ic">📶</span>网络与通讯 · Conexión<span class="plus">+</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li><b>用国际 eSIM 最省事</b>（Airalo / Holafly / Nomad 等），落地即用。阿根廷本地运营商<b>不向游客卖 eSIM</b>，只能买实体卡（需本地证件，麻烦）。</li>
+          <li>想要实体卡：<b>Claro「Chip Turista」</b>覆盖最广，<b>Personal</b> 速度最好。</li>
+          <li><b>三座小城镇中心 4G 都不错</b>（查尔滕最弱但已大幅改善）；但<b>进入国家公园后信号迅速消失</b>——莫雷诺栈道、菲茨罗伊/托雷步道、火地岛深处基本无信号。</li>
+          <li><b>出发前下载离线地图</b>（maps.me / Google 离线 / AllTrails）。</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc reveal">
+      <summary><span class="ic">🔌</span>电源 · 健康 · 安全 · Salud<span class="plus">+</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li><b>插座</b>：阿根廷为 <b>Type I（三斜扁脚）+ Type C</b>，电压 <b>220V/50Hz</b>。中国电器多为双电压、配转换头即可。</li>
+          <li><b>无高原反应</b>：乌斯怀亚海平面、卡拉法特 ~200 m、查尔滕 ~405 m。真正的环境压力是<b>风、冷、紫外线</b>。</li>
+          <li><b>饮水安全</b>：三镇<b>自来水可直饮</b>；冰川国家公园内的溪流/融水有标识可直接饮用——尽管放心补水。</li>
+          <li><b>疫苗</b>：本区域无特别要求（巴塔哥尼亚无黄热、无疟疾），保持常规疫苗即可。</li>
+          <li><b>急救电话 911</b>（全国通用）。偏远步道无信号，量力而行、向护林站登记。</li>
+          <li><b>强烈建议购买旅行医疗保险</b>：阿根廷自 2025 年起要求外国访客持有效旅行医疗险（执行口径与最低额各方说法不一）。无论如何，请买含<b>紧急后送/转运、保额 ≥ US$50,000</b> 的保单，并备好电子+纸质凭证——偏远地区救援昂贵且缓慢。</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc reveal">
+      <summary><span class="ic">🛂</span>签证与入境 · Visa<span class="plus">+</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li><b>中国护照 + 有效美国签证 = 免签入境阿根廷</b>（停留 30 天、可延 30 天），无需 AVE 或领事签证。这是本行程最关键的前提，出发前请确认两人美签在返程后仍有效。</li>
+          <li><b>申根签证已不再被接受</b>作为免签依据。</li>
+          <li>若<b>无美签</b>：须提前向阿根廷领事馆（北京/上海/广州/香港）申请旅游签证，请尽早办理。</li>
+          <li><b>中转枢纽</b>：伊斯坦布尔（2026 起对华免签）、多哈、迪拜对中国护照均<b>互免/免签</b>；<b>巴西圣保罗（GRU）国际转国际、留在 airside（隔离区内）无需巴西签证</b>——请确认你的衔接是同区中转。</li>
+          <li>护照建议保留 6 个月以上有效期与空白页。</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc reveal">
+      <summary><span class="ic">🗣</span>语言 & 常用西语 · Idioma<span class="plus">+</span></summary>
+      <div class="acc-body">
+        <p>阿根廷西语（Rioplatense）：「ll/y」发「sh」音、用 <em>vos</em> 代替 <em>tú</em>。旅游区酒店、旅行社、餐厅<b>英语尚可</b>，出租司机与乡间则少。几句西语会很加分：</p>
+        <table class="tbl">
+          <thead><tr><th>Español</th><th>含义</th></tr></thead>
+          <tbody>
+            <tr><td>Hola / Buen día</td><td>你好 / 早上好</td></tr>
+            <tr><td>Por favor / Gracias</td><td>请 / 谢谢</td></tr>
+            <tr><td>¿Cuánto cuesta?</td><td>多少钱？</td></tr>
+            <tr><td>En pesos, por favor</td><td>请用比索结算（刷卡时）</td></tr>
+            <tr><td>¿Aceptan tarjeta?</td><td>收卡吗？</td></tr>
+            <tr><td>La cuenta, por favor</td><td>买单</td></tr>
+            <tr><td>¿Es fresca?</td><td>（帝王蟹）是鲜活的吗？</td></tr>
+            <tr><td>¿Dónde está el baño?</td><td>洗手间在哪？</td></tr>
+            <tr><td>Ayuda / Emergencia</td><td>帮助 / 紧急</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ PACKING ============ -->
+<section class="band-tight" id="packing">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">10</span> · Equipaje 装备清单</span>
+    <h2 class="h-sec">为「<span class="sc">一日四季</span>」打包</h2>
+    <p class="lede">围绕<b>三层穿衣法</b>来准备，应对一天之内的剧烈天气变化。风（不只是冷）才是头号敌人——一件防风硬壳，比单纯的厚重更管用。<b>勾选会自动保存在本设备</b>。</p>
+
+    <div class="pack-head">
+      <div class="pack-progress">
+        <div class="lab"><span>打包进度</span><span id="packPct">0%</span></div>
+        <div class="track"><div class="fill" id="packFill"></div></div>
+      </div>
+      <button class="pack-reset" id="packReset">清空重置</button>
+    </div>
+
+    <div class="pack-grid" id="packGrid">
+      <div class="pack-col"><h4><span class="ic">🧥</span>分层穿着</h4>
+        <label><input type="checkbox"> 防风防水硬壳冲锋衣（带帽 · 最重要）</label>
+        <label><input type="checkbox"> 羽绒 / 化纤保暖中层</label>
+        <label><input type="checkbox"> 抓绒或软壳（徒步活动层）</label>
+        <label><input type="checkbox"> 美利奴 / 速干底层上衣 ×2–3</label>
+        <label><input type="checkbox"> 速干 / 软壳徒步裤</label>
+        <label><input type="checkbox"> 防水冲锋裤（防侧雨）</label>
+        <label><input type="checkbox"> 保暖内搭裤（清晨 / 游船 / 登顶）</label>
+      </div>
+      <div class="pack-col"><h4><span class="ic">🧤</span>头·手·脚</h4>
+        <label><input type="checkbox"> 保暖帽 + 遮阳帽</label>
+        <label><input type="checkbox"> 手套（保暖一副 + 薄抓握内手套）</label>
+        <label><input type="checkbox"> Buff 脖套（防风沙，必备）</label>
+        <label><input type="checkbox"> 美利奴登山袜 ×4–5</label>
+        <label><input type="checkbox"> 防水登山鞋（磨合好）</label>
+        <label><input type="checkbox"> 城市 / 旅途休闲鞋</label>
+        <label><input type="checkbox"> 微齿冰爪 microspikes（镇上可租）</label>
+        <label><input type="checkbox"> 绑腿（防雪 / 泥，可选）</label>
+      </div>
+      <div class="pack-col"><h4><span class="ic">🕶</span>防晒（臭氧洞！）</h4>
+        <label><input type="checkbox"> SPF50+ 广谱防晒霜</label>
+        <label><input type="checkbox"> SPF 润唇膏</label>
+        <label><input type="checkbox"> UV400 包裹式墨镜（冰川 / 雪地级）</label>
+        <label><input type="checkbox"> 宽檐帽</label>
+      </div>
+      <div class="pack-col"><h4><span class="ic">🎒</span>随身 / 徒步</h4>
+        <label><input type="checkbox"> 20–35L 背包 + 防雨罩</label>
+        <label><input type="checkbox"> 水壶（当地可直饮，随时补水）</label>
+        <label><input type="checkbox"> 登山杖（雪坡 / 大风很有用）</label>
+        <label><input type="checkbox"> 头灯</label>
+        <label><input type="checkbox"> 充电宝（低温掉电快）</label>
+        <label><input type="checkbox"> 急救包 + 水泡贴</label>
+        <label><input type="checkbox"> 行动粮 / 能量食品</label>
+      </div>
+      <div class="pack-col"><h4><span class="ic">📄</span>证件 / 电子</h4>
+        <label><input type="checkbox"> 护照（+ 有效美签）</label>
+        <label><input type="checkbox"> 旅行医疗保险凭证（电子 + 纸质）</label>
+        <label><input type="checkbox"> Type I/C 转换插头（220V）</label>
+        <label><input type="checkbox"> 已装好的国际 eSIM</label>
+        <label><input type="checkbox"> USD 现金（新钞）+ 信用卡 ×2</label>
+        <label><input type="checkbox"> 离线地图 + 行程 / 订单截图</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUDGET ============ -->
+<section class="band-tight" id="budget">
+  <div class="wrap">
+    <span class="eyebrow"><span class="no">11</span> · Presupuesto 预算</span>
+    <h2 class="h-sec">两人，大致<span class="sc">花多少</span></h2>
+    <p class="lede">以下为<b>夫妻二人合计</b>、舒适型（含奢华点缀）的粗略估算（USD，不含购物）。巴塔哥尼亚是阿根廷最贵的一隅，比索波动大——数字仅供量级参考。</p>
+
+    <div class="budget">
+      <div class="bud-bars" id="budBars">
+        <div class="bud-row reveal"><div class="top"><b>国际机票 ×2</b><span class="amt">≈ $4,000</span></div><div class="track"><div class="fill" data-w="100" style="background:var(--dawn-500)"></div></div></div>
+        <div class="bud-row reveal d1"><div class="top"><b>住宿 · 11 晚</b><span class="amt">≈ $2,200</span></div><div class="track"><div class="fill" data-w="55" style="background:var(--glacier-500)"></div></div></div>
+        <div class="bud-row reveal d2"><div class="top"><b>招牌体验 · 二人</b><span class="amt">≈ $1,400</span></div><div class="track"><div class="fill" data-w="35" style="background:var(--steppe-400)"></div></div></div>
+        <div class="bud-row reveal d3"><div class="top"><b>境内机票 ×2 人三段</b><span class="amt">≈ $900</span></div><div class="track"><div class="fill" data-w="23" style="background:var(--glacier-400)"></div></div></div>
+        <div class="bud-row reveal d1"><div class="top"><b>餐饮 · 约 10 天</b><span class="amt">≈ $900</span></div><div class="track"><div class="fill" data-w="23" style="background:var(--dawn-400)"></div></div></div>
+        <div class="bud-row reveal d2"><div class="top"><b>城际 / 接驳 / 门票 / 杂费</b><span class="amt">≈ $700</span></div><div class="track"><div class="fill" data-w="18" style="background:var(--steppe-300)"></div></div></div>
+      </div>
+      <div class="bud-total reveal">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim)">两人合计 · 估算</div>
+        <div class="v" style="margin-top:12px">≈ $10,100<small> USD</small></div>
+        <div class="note">约 ¥7.3 万 / 二人。其中跨洋机票占比最大；若错峰订票、选舒适而非奢华住宿，可压到 $8,000 上下。日常舒适型开销约 <b>US$200–320/天/两人</b>，招牌体验另计（每项每人 US$80–250+）。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing" id="end">
+  <div class="photo bg-milky-way" data-img="milky_way"></div>
+  <div class="wrap" style="position:relative;width:100%">
+    <span class="eyebrow" style="justify-content:center"><span class="no">✦</span> El Fin del Mundo</span>
+    <h2 style="margin-top:18px">愿巴塔哥尼亚的<em>风</em>，<br>记住你们走过的每一寸<em>冰</em></h2>
+    <p class="poem">从北半球的秋，飞进南半球的春；<br>在大陆碎裂成海的地方，<br>两个人，一阵风，一座被点燃的山。</p>
+    <div class="countdown" id="countdown" aria-label="距出发倒计时">
+      <div class="u"><b id="cd-d">—</b><span>Días 天</span></div>
+      <div class="u"><b id="cd-h">—</b><span>Horas 时</span></div>
+      <div class="u"><b id="cd-m">—</b><span>Min 分</span></div>
+      <div class="u"><b id="cd-s">—</b><span>Seg 秒</span></div>
+    </div>
+    <p style="color:var(--ink-dim);font-family:var(--mono);font-size:12px;letter-spacing:.18em;margin-top:30px">出发 · 2026.09.26 · BUENOS AIRES BOUND</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand">巴塔哥尼亚 · 世界尽头</div>
+        <p class="tagline">为 2026 年 9 月 26 日 – 10 月 7 日，夫妻二人的阿根廷南境初春之旅而作。</p>
+      </div>
+      <div style="font-family:var(--mono);font-size:12px;color:var(--ink-dim);line-height:2;text-align:right">
+        <div>09.26 — 10.07 · 2026</div>
+        <div>BUENOS AIRES · USHUAIA</div>
+        <div>EL CALAFATE · EL CHALTÉN</div>
+        <div style="color:var(--accent-2)">patagonia.icoco.uk</div>
+      </div>
+    </div>
+    <div class="credits">
+      <h4>影像来源 · Image Credits（Wikimedia Commons, CC / 公有领域）</h4>
+      <div class="clist" id="creditList">加载中…</div>
+    </div>
+    <p class="disclaimer">本页为个人行程规划参考。航班时刻、季节性开放、门票与汇率会随时变动，所有价格均为估算，出发前请以官方渠道核实（尤其是境内航段时刻、企鹅季开放日、滑雪场关闭日与签证/保险要求）。影像版权归各自作者所有，依其 Creative Commons / 公有领域许可使用。</p>
+  </div>
+</footer>
+
+<div id="lightbox" aria-hidden="true"><img alt="" id="lightboxImg"><div class="cap" id="lightboxCap"></div></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/images.js"></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
